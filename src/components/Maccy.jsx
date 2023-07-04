@@ -11,9 +11,9 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/maccy-transformed.glb')
+  const { nodes, materials } = useGLTF('../maccy-transformed.glb')
   const { initialScale } = props; 
-  
+
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.MacMini_MatteBlack_0.geometry} material={materials.PaletteMaterial001} rotation={[-Math.PI / 2, 0, 0]} scale={initialScale} />
@@ -22,4 +22,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/maccy-transformed.glb')
+useGLTF.preload('../maccy-transformed.glb')

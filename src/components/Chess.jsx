@@ -11,7 +11,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/chess-transformed.glb')
+  const { nodes, materials } = useGLTF('../chess-transformed.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Cube002_WoodPutih_0.geometry} material={materials.WoodPutih} />
@@ -24,4 +24,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/chess-transformed.glb')
+useGLTF.preload('../chess-transformed.glb')
