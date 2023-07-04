@@ -122,7 +122,7 @@ Error generating stack: `+o.message+`
     color: white;
     border: none;
     border-radius: 5px;
-`,Fm=()=>R($m,{children:de(Lm,{children:[de(Rm,{children:[R(Im,{src:"./img/logo.png"}),de(Om,{children:[R(el,{children:" Home"}),R(el,{children:" Studio"}),R(el,{children:" Works"}),R(el,{children:" Contact"})]})]}),de(Dm,{children:[R(Mm,{src:"./img/search.png"}),R(jm,{children:" Hire Now"})]})]})}),Am=N.div`
+`,Fm=()=>R($m,{children:de(Lm,{children:[de(Rm,{children:[R(Im,{src:"public/img/logo.png"}),de(Om,{children:[R(el,{children:" Home"}),R(el,{children:" Studio"}),R(el,{children:" Works"}),R(el,{children:" Contact"})]})]}),de(Dm,{children:[R(Mm,{src:"public/img/search.png"}),R(jm,{children:" Hire Now"})]})]})}),Am=N.div`
     height: 100vh; 
     scroll-snap-align: center;
     display: flex;
@@ -183,7 +183,7 @@ Error generating stack: `+o.message+`
             transform: translateY(20px);
         }
     }
-`,Zm=()=>de(Am,{children:[R(Fm,{}),de(Um,{children:[de(Bm,{children:[R(Wm,{children:" Think. Make. Solve"}),de(Hm,{children:[R(Vm,{src:"./img/line.png"}),R(Qm,{children:"What we Do"})]}),R(Ym,{children:" we enjoy creating delightful, human-centered digital experiences"}),R(Km,{children:"Learn More"})]}),R(Gm,{children:R(Xm,{src:"./img/moon.png"})})]})]}),Jm=N.div`
+`,Zm=()=>de(Am,{children:[R(Fm,{}),de(Um,{children:[de(Bm,{children:[R(Wm,{children:" Think. Make. Solve"}),de(Hm,{children:[R(Vm,{src:"public/img/line.png"}),R(Qm,{children:"What we Do"})]}),R(Ym,{children:" we enjoy creating delightful, human-centered digital experiences"}),R(Km,{children:"Learn More"})]}),R(Gm,{children:R(Xm,{src:"public/img/moon.png"})})]})]}),Jm=N.div`
     height: 100vh; 
     scroll-snap-align: center;
     display: flex;
@@ -224,7 +224,7 @@ Error generating stack: `+o.message+`
     border: none; 
     border-radius: 5px; 
     cursor: pointer; 
-`,u0=()=>R(Jm,{children:de(qm,{children:[R(bm,{}),de(t0,{children:[R(e0,{children:" Think outside the square space"}),de(n0,{children:[R(r0,{src:"./img/line.png"}),R(l0,{children:"Who we Are"})]}),R(o0,{children:" a craetive group of designers and developers with a passion for the arts"}),R(i0,{children:"See our works"})]})]})}),s0=["Web Design","Development","Illustration","Product Design","Social Media"],a0=N.div`
+`,u0=()=>R(Jm,{children:de(qm,{children:[R(bm,{}),de(t0,{children:[R(e0,{children:" Think outside the square space"}),de(n0,{children:[R(r0,{src:"public/img/line.png"}),R(l0,{children:"Who we Are"})]}),R(o0,{children:" a craetive group of designers and developers with a passion for the arts"}),R(i0,{children:"See our works"})]})]})}),s0=["Web Design","Development","Illustration","Product Design","Social Media"],a0=N.div`
     height: 100vh; 
     scroll-snap-align: center;
     display: flex;

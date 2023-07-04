@@ -94,7 +94,7 @@ const Hero = () => {
                 <Left>
                     <Title> Think. Make. Solve</Title>
                     <WhatWeDo>
-                        <Line src="./img/line.png"/>
+                        <Line src="public/img/line.png"/>
                         <Subtitle>What we Do</Subtitle>
                     </WhatWeDo>
                     <Desc> we enjoy creating delightful, human-centered digital experiences</Desc>
@@ -102,7 +102,7 @@ const Hero = () => {
                 </Left>
                 <Right>
                     {/* 3d model */}
-                    <Img src="./img/moon.png"></Img>
+                    <Img src="public/img/moon.png"></Img>
                 </Right>
             </Container>
         </Section>

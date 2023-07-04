@@ -60,7 +60,7 @@ const Navbar = () => {
         <Section> 
             <Container>
                 <Links>
-                <Logo src="./img/logo.png"/>
+                <Logo src="public/img/logo.png"/>
                 <List>
                     <ListItem> Home</ListItem>
                     <ListItem> Studio</ListItem>
@@ -70,7 +70,7 @@ const Navbar = () => {
                 </List>
                 </Links>
                 <Icons>
-                    <Icon src="./img/search.png"/>
+                    <Icon src="public/img/search.png"/>
                     <Button> Hire Now</Button>
                 </Icons>
             </Container>
