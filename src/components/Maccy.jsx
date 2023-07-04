@@ -11,7 +11,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('public/maccy-transformed.glb')
+  const { nodes, materials } = useGLTF('maccy-transformed.glb')
   const { initialScale } = props; 
   return (
     <group {...props} dispose={null}>
@@ -21,4 +21,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('public/maccy-transformed.glb')
+useGLTF.preload('maccy-transformed.glb')
