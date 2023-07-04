@@ -1,5 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
+import Development from "./Development"
+import ProductDesign from "./ProductDesign"
+import WebDesign from "./WebDesign"
+
 
 
 const data = [
@@ -40,53 +44,46 @@ const ListItem = styled.li`
     font-size: 90px;
     font-weight: bold; 
     cursor: pointer; 
-    color: transparent; 
+    color: ${(props) => (props.selected ? 'white' : 'transparent')};
     -webkit-text-stroke: 1px white;
     position: relative; 
-
-    ::after{
-        content: "${(props)=>props.text}";
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: pink;
-        width: 0px;
-        overflow: hidden; 
-        white-space: nowrap;
-    }
-
-    &:hover{
-        ::after{
-            animation: moveText 0.5s linear both;
-
-            @keyframes moveText {
-                to{
-                    width: 100%;
-                }
-            }
-        }
-    }
 `;
 
 const Right = styled.div`
-    flex: 1;
+    flex: 0.6;
 `;
 
 const Works = () => {
+    const [work, setWork] = useState("Web Design");
+    
     return (
         <Section> 
             <Container>
                 <Left>
                     <List>
                         {data.map(item=>(
-                            <ListItem key={item} text={item}>{item}</ListItem>
+                            <ListItem 
+                                key={item} 
+                                selected={work === item} 
+                                text={item} 
+                                onClick={(()=>setWork(item))}>
+                                    {item}
+                            </ListItem>
                         ))}
                     </List>
                 </Left>
-                <Right></Right>
+                <Right>
+                    {work === "Web Design" ? (
+                        <WebDesign/>
+                    ) : work === "Development" ? (
+                        <Development/>
+                    ) : (
+                        <ProductDesign/>
+                    )}
+                </Right>
             </Container>
         </Section>
-    )
-}
+    );
+};
 
 export default Works
