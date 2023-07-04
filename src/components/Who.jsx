@@ -22,9 +22,17 @@ const Container = styled.div`
 
 const Left = styled.div`
     flex: 1;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 const Title = styled.h1`
     font-size: 74px;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 60px;
+    }
 `;
 
 const Right = styled.div`
@@ -33,6 +41,11 @@ const Right = styled.div`
     flex-direction: column; 
     justify-content: center; 
     gap: 20px;
+
+    @media only screen and (max-width: 768px) {
+        align-items: center; 
+        text-align: center;
+    }
 `;
 
 const WhatWeDo = styled.div`
