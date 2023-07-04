@@ -11,7 +11,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('../piano-transformed.glb')
+  const { nodes, materials } = useGLTF('public/piano-transformed.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_2.geometry} material={materials.Material_0} rotation={[-Math.PI, 0, 0]} scale={0.083} />
@@ -26,4 +26,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('../piano-transformed.glb')
+useGLTF.preload('public/piano-transformed.glb')
