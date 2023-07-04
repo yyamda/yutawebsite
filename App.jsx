@@ -3,6 +3,7 @@ import Hero from "./src/components/Hero"
 import Who from "./src/components/Who"
 import Works from "./src/components/Works"
 import styled from "styled-components"
+import Test from "./src/components/Test"
 
 const Container = styled.div`
     height: 100vh; 
@@ -23,6 +24,7 @@ function App() {
         <Who/>
         <Works/>
         <Contact/>
+        <Test/>
       </Container>
     )
   }
