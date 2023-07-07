@@ -21,7 +21,6 @@ const Container = styled.div`
 
 const Canvas = styled.canvas`
   position: sticky;
-  border: solid blue;
   top: 0; 
   bottom: 0;
   left: 0;
