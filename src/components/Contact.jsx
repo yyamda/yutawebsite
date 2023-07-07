@@ -6,6 +6,7 @@ const Section = styled.div`
     scroll-snap-align: center;
     display: flex;
     justify-content: center;
+    border: solid red;
 
 `
 const Container = styled.div`

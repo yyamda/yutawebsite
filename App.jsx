@@ -4,27 +4,41 @@ import Who from "./src/components/Who"
 import Works from "./src/components/Works"
 import styled from "styled-components"
 import Test from "./src/components/Test"
+import useScript from "./src/useScript"
 
 const Container = styled.div`
-    height: 100vh; 
+    height: 100vh;
     scroll-snap-type : y mandatory; 
     scroll-behavior: smooth;
     overflow-y: auto;
     scrollbar-width:none;
-    color: white; 
-    background: url("public/img/bg.jpeg");
-    }
+    color: black; 
+    background: url("public/img/paintwallBW2.jpg");
+    background-size: 1700px 700px;
+    border: solid blue;
+
 `
-// &::-webkit-scrollbar{
+
+const Canvas = styled.canvas`
+  position: relative; 
+  height: 100%;
+`
+
+// star, crater good
+// &::-webkit-scrollbar{x
 //     display: none;
-function App() {
+function App({url}) {
+  // useScript(url)
     return (
-      <Container>
-        <Hero/>
-        <Who/>
-        <Works/>
-        <Contact/>
-      </Container>
+      <div>
+        {/* <Canvas id="canvas"></Canvas> */}
+        <Container >
+              <Hero/>
+              <Who/>
+              <Works/>
+              <Contact/>
+          </Container>
+        </div>
     )
   }
   

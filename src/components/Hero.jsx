@@ -133,18 +133,18 @@ const Hero = () => {
                     <Desc> we enjoy creating delightful, human-centered digital experiences</Desc>
                     <Button>Learn More</Button>
                 </Left>
-                <Right>
-                <Canvas>
+                {/* <Right> */}
+                {/* <Canvas>
                         <OrbitControls enableZoom={false}/> 
                         <ambientLight intensity={1} />
                         <directionalLight position={[3,2,1]} />
                         <Sphere args={[1, 100, 200]} scale={2.5}>
                             <MeshDistortMaterial 
-                                color="#220736" attach="material" distort={0.5} speed={2}/>
+                                color="#919EA0" attach="material" distort={0.5} speed={2}/>
                         </Sphere>
-                    </Canvas>
-                    <Img src="public/img/moon.png"></Img>
-                </Right>
+                    </Canvas> */}
+                    {/* <Img src="public/img/moon.png"></Img> */}
+                {/* </Right> */}
             </Container>
         </Section>
     )

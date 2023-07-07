@@ -9,9 +9,7 @@ import WebDesign from "./WebDesign"
 const data = [
     "Web Design",
     "Development",
-    "Illustration", 
     "Product Design", 
-    "Social Media",
 ];
 
 const Section = styled.div`
