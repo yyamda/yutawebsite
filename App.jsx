@@ -15,31 +15,31 @@ const Container = styled.div`
     color: black; 
     background: url("public/img/paintwallBW2.jpg");
     background-size: 1700px 700px;
-    border: solid blue;
+    position: relative;
 
 `
 
 const Canvas = styled.canvas`
-  position: relative; 
+  position: sticky;
+  border: solid blue;
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   height: 100%;
 `
-
-// star, crater good
-// &::-webkit-scrollbar{x
-//     display: none;
 function App({url}) {
-  // useScript(url)
+  useScript(url)
     return (
-      <div>
-        {/* <Canvas id="canvas"></Canvas> */}
         <Container >
-              <Hero/>
-              <Who/>
-              <Works/>
-              <Contact/>
+                  <Canvas id="canvas"/>
+            <Hero/>
+            <Who/>
+            <Works/>
+            <Contact/>
           </Container>
-        </div>
     )
   }
-  
+
   export default App
