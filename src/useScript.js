@@ -17,12 +17,10 @@ const useScript = url => {
         }
 
         canvas.addEventListener("mousemove", function (event) {
-            console.log("mouve is moved")
             mouse.x = event.x;
             mouse.y = event.y; 
 
-            for (let i = 0; i < 5; i++) {
-                console.log("spot pushed")
+            for (let i = 0; i < 2; i++) {
                 spots.push(new Particle());
             }
         }); 
@@ -31,10 +29,12 @@ const useScript = url => {
             constructor() {
                 this.x = mouse.x;
                 this.y = mouse.y; 
-                this.size = Math.random() * 2 + 0.1; 
+                this.size = Math.random() *  4 + 0.1; 
                 this.speedX = Math.random() * 2 - 1;
                 this.speedY = Math.random() * 2 - 1;
-                this.color = 'hs1(' + hue + ', 100%, 50%)';
+                console.log(hue)
+                // this.color = 'hs1(' + hue + ', 100%, 50%)';
+                this.color = 'hsl(196, 13%, 36%)';
             }
             update() {
                 this.x += this.speedX; 
@@ -50,7 +50,6 @@ const useScript = url => {
         }
 
         function handleParticle() {
-            console.log(spots.length)
             for (let i = 0; i < spots.length; i++) {
                 spots[i].update(); 
                 spots[i].draw(); 
@@ -76,9 +75,7 @@ const useScript = url => {
 
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height); 
-            console.log("animated")
             handleParticle(); 
-            console.log("postanimated")
             hue++; 
             requestAnimationFrame(animate); 
         }

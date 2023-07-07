@@ -65,12 +65,12 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-    color: #da4ea2;
+    color: black;
 `;
 
 const Desc = styled.p`
     font-size: 24px; 
-    color: lightgray;
+    color: gray;
 
     @media only screen and (max-width: 768px) {
         padding: 20px;
@@ -80,7 +80,7 @@ const Desc = styled.p`
 `;
 
 const Button = styled.button`
-    background-color: #da4ea2;
+    background-color: black;
     color: white; 
     font-weight: 500;
     width: 100px; 
@@ -125,12 +125,12 @@ const Hero = () => {
             <Navbar/>
             <Container> 
                 <Left>
-                    <Title> Think. Make. Solve</Title>
+                    <Title> Yuta Yamada</Title>
                     <WhatWeDo>
                         <Line src="public/img/line.png"/>
-                        <Subtitle>What we Do</Subtitle>
+                        <Subtitle>My Website</Subtitle>
                     </WhatWeDo>
-                    <Desc> we enjoy creating delightful, human-centered digital experiences</Desc>
+                    <Desc> Computer Science and Data Science Student at UC Berkeley</Desc>
                     <Button>Learn More</Button>
                 </Left>
                 {/* <Right> */}

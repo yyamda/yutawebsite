@@ -33,10 +33,10 @@ function App({url}) {
   useScript(url)
     return (
         <Container >
-                  <Canvas id="canvas"/>
+            <Canvas id="canvas"/>
             <Hero/>
             <Who/>
-            <Works/>
+            {/* <Works/> */}
             <Contact/>
           </Container>
     )

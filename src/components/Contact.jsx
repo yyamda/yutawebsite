@@ -6,7 +6,6 @@ const Section = styled.div`
     scroll-snap-align: center;
     display: flex;
     justify-content: center;
-    border: solid red;
 
 `
 const Container = styled.div`
@@ -28,7 +27,7 @@ const Title = styled.h1`
 `
 
 const Subtitle = styled.h2`
-    color: #da4ea2;
+    color: black;
 `;
 
 const Contact = () => {

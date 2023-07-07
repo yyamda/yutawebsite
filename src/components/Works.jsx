@@ -23,6 +23,7 @@ const Container = styled.div`
     width: 1400px;
     display: flex; 
     justify-content: space-between; 
+    align-items: center;
 
     @media only screen and (max-width: 768px) {
         width: 100%;
@@ -52,7 +53,7 @@ const ListItem = styled.li`
     font-size: 90px;
     font-weight: bold; 
     cursor: pointer; 
-    color: ${(props) => (props.selected ? 'white' : 'transparent')};
+    color: ${(props) => (props.selected ? 'black' : 'gray')};
     -webkit-text-stroke: 1px white;
     position: relative; 
 
@@ -65,7 +66,10 @@ const ListItem = styled.li`
 `;
 
 const Right = styled.div`
-    flex: 0.6;
+    display: flex;
+    height: 400px;
+    width: 600px;
+    // border: red solid;
 
     @media only screen and (max-width: 768px) {
         flex: 0.3;

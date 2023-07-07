@@ -8,13 +8,13 @@ const WebDesign = () => {
     const initialScale = [0.2, 0.2, 0.2];
 
     return (
-        <Canvas>
-           <OrbitControls enableZoom={false} autoRotate/> 
-            <Stage environment="city" intensity={0.6}>
-                <Maccy initialScale={initialScale}/>
-            </Stage>
-            <OrbitControls enableZoom={false} />
-        </Canvas>
+            <Canvas>
+            <OrbitControls enableZoom={false} autoRotate/> 
+                <Stage environment="city" intensity={0.6}>
+                    <Maccy initialScale={initialScale}/>
+                </Stage>
+                <OrbitControls enableZoom={false} />
+            </Canvas>
     )
 }
 

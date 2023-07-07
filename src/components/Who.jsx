@@ -59,16 +59,16 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-    color: #da4ea2;
+    color: gray;
 `;
 
 const Desc = styled.p`
     font-size: 24px; 
-    color: lightgray;
+    color: gray;
 `;
 
 const Button = styled.button`
-    background-color: #da4ea2;
+    background-color: black;
     color: white; 
     font-weight: 500;
     width: 120px; 
@@ -87,17 +87,17 @@ const Who = () => {
                         <OrbitControls enableZoom={false} autoRotate/> 
                         <ambientLight intensity={1} />
                         <directionalLight position={[3,2,1]} />
-                        <Cube />
+                        {/* <Cube /> */}
                     </Canvas>
-                </Left>
+                </Left> 
                 <Right>
-                    <Title> Think outside the square space</Title>
+                    <Title> Figuring out what I want to do</Title>
                     <WhatWeDo>
                         <Line src="public/img/line.png"/>
                         <Subtitle>Who we Are</Subtitle>
                     </WhatWeDo>
-                    <Desc> a craetive group of designers and developers with a passion for the arts</Desc>
-                    <Button>See our works</Button>
+                    <Desc> PM Intern at Blizzard and former SWE intern at NTT DATA</Desc>
+                    <Button>See my works!!!</Button>
                 </Right>
             </Container>
         </Section>
