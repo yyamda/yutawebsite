@@ -1,24 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
-const Section = styled.div`
-    display: flex;
-    justify-content: center; 
-    background: white; 
-    height: 80px;
-    width: 100%;
-
-    @media only screen and (max-width: 768px) {
-        width: 100%;
-    }
-`
 const Container = styled.div`
     width: 100%; 
+    height: 50px;
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding: 10px 0px ;
+    padding: 10px 0px;
+    background-color: white;
+    opacity: 0.7;
 
 
     @media only screen and (max-width: 768px) {
@@ -26,94 +19,77 @@ const Container = styled.div`
         padding: 10px;
     }
 `;
-const Links = styled.div`
-    width: 600px;
-    margin-right: 150px;
-    font-size: 20px;
-`;
-
-const Logo = styled.img`
-    height: 50px;
-`;
 
 const List = styled.ul`
-    display: flex; 
-    justify-content: space-between; 
-    gap: 20px;
-    list-style: none;
-    // border: red solid;
+    margin-right: 150px;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    // border: black solid;
 
     @media only screen and (max-width: 768px) {
         display: none;
     }
 `; 
 
-const ListItem = styled.li`
-    cursor: pointer;
+const ListItem = styled(Link)`
+    color: black;
     font-family: "Lucida Console", "Courier New", monospace;
-    // font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
 
+    &.active {
+        font-weight: 400; 
+        color: #B8B8B8; 
+      }
+  
+      &:hover {
+        color: #B8B8B8; 
+        transition: 0.5s ease-in-out;
+      }
+  
+      &::after {
+        content: "";
+        position: absolute; 
+        left: 1;
+        bottom: 0;
+        display: block;
+        height: 2px;
+        width: 0;
+        background-color: #B8B8B8;
+        transition: width 0.4s ease-in-out;
+      }
+  
+      &:hover::after {
+        width: 100%;
+      }
 
+    // border: black solid;
 `;
 
-const Icons = styled.div`
-    display: flex;
-    align-items: center; 
-    gap: 20px;
-    border: red solid;
-`;
 
-const Icon = styled.img`
-    width: 20px; 
-    cursor: pointer; 
-`;
-
-const Button = styled.button`
-    width: 100px; 
-    padding: 10px;
-    background-color: black;
-    cursor: pointer;
-    color: white;
-    border: none;
-    border-radius: 5px;
-`;
-
-const HomeIcon = styled.div`
-    display: flex;
-    height: 100%;
-    align-items: center;
-    width: 150px; 
-    justify-content: center;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 25px;
-    font-weight: bold;
-    
-
+const HomeIcon = styled.img`
+    height: 60px;
+    margin-left: 30px;
 `
-
 
 const Navbar = () => {
     return (
-        <Section> 
-            <Container>
-                <HomeIcon>
-                    Yuta
-                </HomeIcon>
-                <Links>
-                    <List>
-                        <ListItem> Home</ListItem>
-                        <ListItem> Projects</ListItem>
-                        <ListItem> Experiences</ListItem>
-                        <ListItem> Contact</ListItem>
-
-                    </List>
-                </Links>
-                {/* <Icons>
-                    <Icon src="public/img/search.png"/>
-                    <Button> Hire Now</Button>
-                </Icons> */}
-            </Container>
-        </Section>
+        <Container>
+            <Link to="/Home">
+                <HomeIcon src="public/img/YutaWebsiteLogo.png"/>
+            </Link>
+            <List>
+                <ListItem to="/home"> Home </ListItem>
+                <ListItem to="/projects" > Projects </ListItem>
+                <ListItem to="/experiences"> Experiences </ListItem>
+            </List>
+        </Container>
     )
 }
 
