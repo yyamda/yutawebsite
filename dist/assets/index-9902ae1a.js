@@ -133,7 +133,7 @@ Error generating stack: `+o.message+`
 `,vg=O.img`
     height: 60px;
     margin-left: 30px;
-`,ha=()=>ue(mg,{children:[L(Fd,{to:"/Home",children:L(vg,{src:"public/img/YutaWebsiteLogo.png"})}),ue(gg,{children:[L(ll,{to:"/home",children:" Home "}),L(ll,{to:"/projects",children:" Projects "}),L(ll,{to:"/experiences",children:" Experiences "})]})]}),yg=O.div`
+`,ha=()=>ue(mg,{children:[L(Fd,{to:"/Home",children:L(vg,{src:"public/img/YutaWebsiteLogo.png"})}),ue(gg,{children:[L(ll,{to:"/home",children:" Home "}),L(ll,{to:"/experiences",children:" Experiences "}),L(ll,{to:"/projects",children:" Projects "})]})]}),yg=O.div`
     display: flex; 
     justify-content: space-around;
     align-items: center;

@@ -86,8 +86,9 @@ const Navbar = () => {
             </Link>
             <List>
                 <ListItem to="/home"> Home </ListItem>
-                <ListItem to="/projects" > Projects </ListItem>
                 <ListItem to="/experiences"> Experiences </ListItem>
+                <ListItem to="/projects" > Projects </ListItem>
+               
             </List>
         </Container>
     )
