@@ -75,19 +75,19 @@ function Experiences() {
                 <Experience timeframe="May 2023 - August 2023" position="Product Management Intern"
                 img="public/img/blizzard.png" imgW="180" imgH="80" 
                 description="Worked with the Battle.net Desktop team to ship 4 QoL features with 10+ engineers & designers, set up data analytics portals on Looker, and conduct a comprehensive competitve analysis on post-purchase UI/UX"
-                addinfo="Skills: SQL BigQuery, Looker, Figma, Project Management, Communication"/>
+                addinfo="Skills: Product Management, SQL BigQuery, Looker, Figma, Project Management, Communication"/>
 
                 <Experience timeframe="December 2022 - May 2023" position="Project Manager (Contract)"
                 img="public/img/amex.png" imgW="125" imgH="125" 
-                description="Manage team of 5 to develop end-to-end product roadmaps of Large Language Model (LLM) use cases for AMEX "
+                description="Managed a team of 5 to develop 6 comprehensive product roadmaps of Large Language Model (LLM) use cases for AMEX Digital Labs"
                 addinfo="Skills: Product Roadmapping, Project Management, Presentation, Technical Consulting"/>
            
                 <Experience timeframe="August 2022 - February 2023" position="Project Manager (Contract)"
                 img="public/img/intuit.png" imgW="150" imgH="50" 
-                description="Managed a team of 6 and developed an internal AI documentation portal for 1000+ Intuit data scientists"
+                description="Managed a team of 6 and conducted 20+ meeting with 30+ internal engineers and data scientists to develop an internal AI documentation portal for 1000+ Intuit data scientists"
                 addinfo="Skills: Technical Consultation, ML Lifecycle roadmapping, technical writing,"/>
 
-                <Experience timeframe="January 2022 - May 2022" position="Software Engineer Intern "
+                <Experience timeframe="May 2022 - August 2022" position="Software Engineer Intern "
                 img="public/img/nttdata.png" imgW="180" imgH="40" 
                 description= "Developed a personalized ranking software prototype utilizing a quantum computer and optimizing algorithms"
                 addinfo="Skills: Python (pandas, pyQUBO), Linear Algebra, Japanese"/>
@@ -98,7 +98,7 @@ function Experiences() {
                 addinfo="Skills: Python (Selenium, tkinter, pandas)"/>
            
                 <Experience timeframe="August 2021 - January 2022" position="Software Engineer (Contract)"
-                img="public/img/burningrock.png" imgW="175" imgH="100"
+                img="public/img/burningrock.png" imgW="175" imgH="85"
                  description="Developed a full stack live-updating database that list 1000+ new clinical trials globally for company outreach"
                  addinfo="Skills: React, Python, Postman, MongoDB"/>
         
