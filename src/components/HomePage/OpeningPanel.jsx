@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Navbar from '../Navbar'
+import Yuta from '../../../public/img/yuta.png'
+import github from '../../../public/img/github.png'
 
 const Container = styled.div`
     display: flex; 
@@ -150,7 +152,7 @@ const Hero = () => {
                         <Icon src="public/img/linkedin.png" height="50" width="50"/>
                     </a>
                     <a href="https://github.com/yyamda" target="_blank">
-                        <Icon src="public/img/github.png" height="50" width="50"/>
+                        <Icon src={github} height="50" width="50"/>
                     </a>
                     <a href="https://instagram.com/yuta_.yamada?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
                         <Icon src="public/img/instagram.png" height="50" width="50"/>
@@ -158,7 +160,7 @@ const Hero = () => {
                 </IconBar>
                 <Desc2> Contact Me: yutayamada@berkeley.edu</Desc2>
             </InfoBox>
-            <YutaPicture src="public/img/yuta.png"/>
+            <YutaPicture src={Yuta}/>
         </Container>
     )
 }

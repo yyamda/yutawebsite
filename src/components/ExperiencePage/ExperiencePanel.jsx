@@ -1,6 +1,10 @@
 import react from "react"
 import styled from "styled-components"
 import Experience from "../ExperiencePage/Experience"
+import blizzard from "../../../public/img/blizzard.png"
+import burningrock from "../../../public/img/burningrock.png"
+import berkeley from "../../../public/img/berkeley.png"
+import bishop from "../../../public/img/bishop.png"
 
 
 const Header = styled.div`
@@ -32,6 +36,16 @@ const ExperienceContainer = styled.div`
 
     gap: 30px;
 
+    animation: Appear 1s ease-in-out 1s both;
+
+    @keyframes Appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 
     
 
@@ -47,16 +61,6 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
 
-    animation: Appear 1s ease-in-out 1s both;
-
-    @keyframes Appear {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
     
     // border: solid black;
 
@@ -73,7 +77,7 @@ function Experiences() {
 
             <ExperienceContainer>
                 <Experience timeframe="May 2023 - August 2023" position="Product Management Intern"
-                img="public/img/blizzard.png" imgW="180" imgH="80" 
+                img={blizzard} imgW="180" imgH="80" 
                 description="Worked with the Battle.net Desktop team to ship 4 QoL features with 10+ engineers & designers, set up data analytics portals on Looker, and conduct a comprehensive competitve analysis on post-purchase UI/UX"
                 addinfo="Skills: Product Management, SQL BigQuery, Looker, Figma, Project Management, Communication"/>
 
@@ -98,7 +102,7 @@ function Experiences() {
                 addinfo="Skills: Python (Selenium, tkinter, pandas)"/>
            
                 <Experience timeframe="August 2021 - January 2022" position="Software Engineer (Contract)"
-                img="public/img/burningrock.png" imgW="175" imgH="85"
+                img={burningrock} imgW="175" imgH="85"
                  description="Developed a full stack live-updating database that list 1000+ new clinical trials globally for company outreach"
                  addinfo="Skills: React, Python, Postman, MongoDB"/>
         
@@ -107,13 +111,13 @@ function Experiences() {
             <SubHeader> Education</SubHeader>
                 <ExperienceContainer>
                     <Experience timeframe="August 2021 - Current" position="B.A. in Computer Science and Data Science "
-                    img="public/img/berkeley.png" imgW="175" imgH="50" 
+                    img={berkeley} imgW="175" imgH="50" 
                     description="Activities: Product Space, UpSync Consulting, Data Science Society"
                     addinfo="Relevant Coursework: CS 61A (Functional Programming), CS 61B (Data Structures), CS 61C (Machines and Computer Architecture) 
                     CS 70 (Discrete Math), MATH 54 (Linear Algebra), CS 186 (Databases), DATA 8 (Intro to Data Science), DATA 100 (Principles of Data Science)"/>
             
                     <Experience timeframe="August 2017 - May 2021" position="High School Diploma"
-                    img="public/img/bishop.png" imgW="125" imgH="125" description='Activities: Varsity Boys Tennis, ASB, Philosophy Club, Science Club, KnightLife, Principal"s Advisory Committee'/>
+                    img={bishop} imgW="125" imgH="125" description='Activities: Varsity Boys Tennis, ASB, Philosophy Club, Science Club, KnightLife, Principal"s Advisory Committee'/>
                 </ExperienceContainer>
         </Container>
 

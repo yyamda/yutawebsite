@@ -2,6 +2,10 @@ import {react, useState} from "react"
 import Navbar from "../Navbar"
 import styled from 'styled-components'
 import Project from './Project'
+import alarmclock from "../../../public/img/socialalarm.png"
+import pswebsite from "../../../public/img/pswebsite.png"
+import yutawebsite from "../../../public/img/yutawebsite.png"
+import background from "../../../public/img/paintwallBW2.jpg"
 
 const Container = styled.div`
     height: 100vh;
@@ -10,7 +14,7 @@ const Container = styled.div`
     overflow-y: auto;
     scrollbar-width:none;
     color: black; 
-    background: url("public/img/paintwallBW2.jpg");
+    background: url(${background});
     background-size: 1700px 700px;
     position: relative;
 
@@ -99,17 +103,17 @@ const projects =
     [ 
         {
         Title: 'Social Alarm Clock App', 
-        img: 'public/img/socialalarm.png',
+        img: alarmclock,
         link: "https://github.com/yyamda/socialalarmclock"
         }, 
         {
             Title: 'Product Space Website', 
-            img: 'public/img/pswebsite.png',
+            img: pswebsite,
             link: "https://github.com/yyamda/pswebsite"
         }, 
         {
         Title: 'Personal Website', 
-        img: 'public/img/yutawebsite.png',
+        img: yutawebsite,
         link: "https://github.com/yyamda/yutawebsite"
         }
     ]
