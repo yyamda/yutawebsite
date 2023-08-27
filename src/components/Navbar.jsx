@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import navbarIcon from "../../public/img/YutaWebsiteLogo.png"
 
 
 const Container = styled.div`
@@ -82,7 +83,7 @@ const Navbar = () => {
     return (
         <Container>
             <Link to="/Home">
-                <HomeIcon src="public/img/YutaWebsiteLogo.png"/>
+                <HomeIcon src={navbarIcon}/>
             </Link>
             <List>
                 <ListItem to="/home"> Home </ListItem>

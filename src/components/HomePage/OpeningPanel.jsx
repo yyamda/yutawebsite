@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import Navbar from '../Navbar'
 import Yuta from '../../../public/img/yuta.png'
 import github from '../../../public/img/github.png'
+import linkedin from '../../../public/img/linkedin.png'
+import instagram from '../../../public/img/instagram.png'
 
 const Container = styled.div`
     display: flex; 
@@ -149,13 +151,13 @@ const Hero = () => {
                 <Desc> Computer Science and Data Science Student at UC Berkeley</Desc>
                 <IconBar>
                     <a href="https://www.linkedin.com/in/yutayamada/" target="_blank">
-                        <Icon src="public/img/linkedin.png" height="50" width="50"/>
+                        <Icon src={linkedin} height="50" width="50"/>
                     </a>
                     <a href="https://github.com/yyamda" target="_blank">
                         <Icon src={github} height="50" width="50"/>
                     </a>
                     <a href="https://instagram.com/yuta_.yamada?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
-                        <Icon src="public/img/instagram.png" height="50" width="50"/>
+                        <Icon src={instagram} height="50" width="50"/>
                     </a>
                 </IconBar>
                 <Desc2> Contact Me: yutayamada@berkeley.edu</Desc2>

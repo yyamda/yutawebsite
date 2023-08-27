@@ -5,6 +5,10 @@ import blizzard from "../../../public/img/blizzard.png"
 import burningrock from "../../../public/img/burningrock.png"
 import berkeley from "../../../public/img/berkeley.png"
 import bishop from "../../../public/img/bishop.png"
+import intuit from "../../../public/img/intuit.png"
+import nttdata from "../../../public/img/nttdata.png"
+import captaintv from "../../../public/img/captaintv.png"
+import amex from "../../../public/img/amex.png"
 
 
 const Header = styled.div`
@@ -82,22 +86,22 @@ function Experiences() {
                 addinfo="Skills: Product Management, SQL BigQuery, Looker, Figma, Project Management, Communication"/>
 
                 <Experience timeframe="December 2022 - May 2023" position="Project Manager (Contract)"
-                img="public/img/amex.png" imgW="125" imgH="125" 
+                img={amex} imgW="125" imgH="125" 
                 description="Managed a team of 5 to develop 6 comprehensive product roadmaps of Large Language Model (LLM) use cases for AMEX Digital Labs"
                 addinfo="Skills: Product Roadmapping, Project Management, Presentation, Technical Consulting"/>
            
                 <Experience timeframe="August 2022 - February 2023" position="Project Manager (Contract)"
-                img="public/img/intuit.png" imgW="150" imgH="50" 
+                img={intuit} imgW="150" imgH="50" 
                 description="Managed a team of 6 and conducted 20+ meeting with 30+ internal engineers and data scientists to develop an internal AI documentation portal for 1000+ Intuit data scientists"
                 addinfo="Skills: Technical Consultation, ML Lifecycle roadmapping, technical writing,"/>
 
                 <Experience timeframe="May 2022 - August 2022" position="Software Engineer Intern "
-                img="public/img/nttdata.png" imgW="180" imgH="40" 
+                img={nttdata} imgW="180" imgH="40" 
                 description= "Developed a personalized ranking software prototype utilizing a quantum computer and optimizing algorithms"
                 addinfo="Skills: Python (pandas, pyQUBO), Linear Algebra, Japanese"/>
            
                 <Experience timeframe="January 2022 - May 2022" position="Software Engineer (Contract) "
-                img="public/img/captaintv.png" imgW="180" imgH="60" 
+                img={captaintv} imgW="180" imgH="60" 
                 description="Developed a full stack web scraper that scrapes SNS platforms to extract data to help with sponsorship outreach "
                 addinfo="Skills: Python (Selenium, tkinter, pandas)"/>
            

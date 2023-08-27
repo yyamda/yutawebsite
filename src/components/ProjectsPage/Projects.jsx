@@ -6,6 +6,7 @@ import alarmclock from "../../../public/img/socialalarm.png"
 import pswebsite from "../../../public/img/pswebsite.png"
 import yutawebsite from "../../../public/img/yutawebsite.png"
 import background from "../../../public/img/paintwallBW2.jpg"
+import github from "../../../public/img/github.png"
 
 const Container = styled.div`
     height: 100vh;
@@ -125,7 +126,7 @@ function Projects() {
                 <Header> Projects </Header>
                 <SubHeader> More projects on my GitHub site  </SubHeader>
                 <a href="https://github.com/yyamda" target="_blank">
-                        <Icon src="public/img/github.png" height="50" width="50"/>
+                        <Icon src={github} height="50" width="50"/>
                     </a>
             </HeaderContainer>
             <WholeContainer> 
